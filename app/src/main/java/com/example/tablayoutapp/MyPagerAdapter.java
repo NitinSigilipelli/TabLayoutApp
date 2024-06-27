@@ -5,7 +5,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class MyPagerAdapter extends FragmentPagerAdapter {
     private int numOfTabs;
@@ -20,11 +19,11 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch(position){
             case 0 :
-                return new ChatFragment();
+                return new WaifuFragment();
             case 1 :
-                return new StatusFragment();
+                return new NekoFragment();
             case 2 :
-                return new CallsFragment();
+                return new ShinobuFragment();
             default:
                 return null;
 
@@ -43,11 +42,11 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         String title = null;
         if(position == 0){
-            title = "Chats";
+            title = "Waifu";
         }else if(position == 1){
-            title = "Status";
+            title = "Neko";
         }else if(position == 2){
-            title = "Calls";
+            title = "Shinobu";
         }
         return title;
     }
