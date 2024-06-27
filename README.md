@@ -30,5 +30,5 @@ This Android application uses a tab layout to display images fetched from differ
 2.Connect your physical device via USB or ensure your emulator is running.
 
 ```sh
-https://github.com/yourusername/your-repo.git
+[https://github.com/yourusername/your-repo.git](https://github.com/NitinSigilipelli/TabLayoutApp.git)
 
